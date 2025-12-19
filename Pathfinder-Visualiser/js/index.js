@@ -545,6 +545,13 @@ function bfs(Grid, start)
 
 function recursiveDivisionMaze (Grid, nodes, rowStart, rowEnd, colStart, colEnd, orientation, borderWalls, type) {
     if (rowEnd < rowStart || colEnd < colStart) return;
+    console.log("rowStart", rowStart);
+    console.log("rowEnd", rowEnd);
+    console.log("colStart", colStart);
+    console.log("colEnd", colEnd);
+    console.log("orientation", orientation);
+    console.log("borderWalls", borderWalls);
+    console.log("type", type);  
 
     if(!borderWalls)
     {
