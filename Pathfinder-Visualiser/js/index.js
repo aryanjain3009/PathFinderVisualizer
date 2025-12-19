@@ -670,6 +670,8 @@ function getShortestPath(Grid) {
     }
 }
 
+console.log(Grid.shortestPathNodes);
+
 function launchAnimations (index, Grid) {
     let speed = 0;
     Grid.shortestPathNodes.reverse(); 
