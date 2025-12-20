@@ -553,6 +553,8 @@ function recursiveDivisionMaze (Grid, nodes, rowStart, rowEnd, colStart, colEnd,
             {
                 let r = parseInt(node.split("_")[1]);
                 let c = parseInt(node.split("_")[2]);
+                console.log(r,c);
+
 
                 if(r === 0 || c === 0 || r === Grid.height-1 || c === Grid.width-1)
                 {
@@ -564,6 +566,7 @@ function recursiveDivisionMaze (Grid, nodes, rowStart, rowEnd, colStart, colEnd,
                     } 
                     else
                         nodes[node].status = "wall";
+                    console.log(node);
                 }
             }
         });
@@ -575,6 +578,7 @@ function recursiveDivisionMaze (Grid, nodes, rowStart, rowEnd, colStart, colEnd,
         let possibleRows = [];
         for (let i = rowStart; i <= rowEnd; i += 2) {
           possibleRows.push(i);
+          console.log(possibleRows);
         }
 
         let possibleCols = [];
