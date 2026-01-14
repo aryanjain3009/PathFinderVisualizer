@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npx http-server Pathfinder-Visualiser"
+  },
   "dependencies": {
     "ioredis": "^5.8.2"
   }
