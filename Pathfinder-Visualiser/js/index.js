@@ -269,6 +269,9 @@ class Grid {
         else if(this.algorithmName === "Dfs")
             dfs(this, this.source);
         else if(this.algorithmName === "Bfs")
+            console.log('----------++++++++++++++++++++------------');
+            console.log("BFS");
+            console.log('😁😁😁😁😁😁😁😁');
             bfs(this, this.source);
         
         getShortestPath(this);
